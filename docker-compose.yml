@@ -1,0 +1,8 @@
+version: '3.6'
+services:
+  boiler:
+    build: .
+    volumes:
+      - type: bind
+        source: .
+        target: /opt/boiler/
