@@ -5,7 +5,7 @@ WORKDIR $PYTHONPATH
 
 RUN pip install pipenv
 
-COPY Pipfile* .
+COPY Pipfile* $PYTHONPATH
 RUN pipenv install --dev
 
 COPY . .
