@@ -1,0 +1,8 @@
+Makefile
+
+.git/
+.gitignore
+
+Dockerfile
+.dockerignore
+docker-compose*

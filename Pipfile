@@ -3,7 +3,12 @@ url = 'https://pypi.python.org/simple'
 verify_ssl = true
 name = 'pypi'
 
+[scripts]
+
+up = 'gunicorn --config ignite.py ignite:app'
+
 [packages]
+gunicorn = '*'
 requests = '*'
 flask = '*'
 

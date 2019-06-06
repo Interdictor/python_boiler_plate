@@ -1,10 +1,10 @@
 version: '3.6'
 services:
   boiler:
-    build: core/
+    build: .
     volumes:
       - type: bind
-        source: ./core/
-        target: /opt/core/
+        source: .
+        target: /opt/boiler/
     ports:
       - '8000:8000'

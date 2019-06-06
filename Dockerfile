@@ -8,6 +8,6 @@ RUN pip install pipenv
 COPY Pipfile* $PYTHONPATH
 RUN pipenv install --dev
 
-COPY . .
+COPY . $PYTHONPATH
 
-CMD ["pipenv", "run", "python", "ops/run.py"]
+CMD ["pipenv", "run", "up"]
