@@ -11,5 +11,6 @@ services:
       - HOST=0.0.0.0
       - WORKERS=4
       - WSGI_TIMEOUT=10
+      - RELOAD=true
     ports:
       - '8000:8000'

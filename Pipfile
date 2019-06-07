@@ -5,7 +5,7 @@ name = 'pypi'
 
 [scripts]
 
-up = 'gunicorn --config ignite.py ignite:app'
+up = 'gunicorn --config configure_gunicorn.py src.boiler:app'
 
 [packages]
 gunicorn = '*'

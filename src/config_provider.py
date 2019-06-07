@@ -13,4 +13,11 @@ class ConfigProvider:
             'host': os.getenv('HOST', cls.DEFAULT_HOST),
             'workers': os.getenv('WORKERS', cls.DEFAULT_WORKERS),
             'wsgi_timeout': os.getenv('WSGI_TIMEOUT', cls.DEFAULT_WSGI_TIMEOUT),
+            'reload': cls._extract_reload(),
         }
+
+    @classmethod
+    def _extract_reload(cls):
+        raw_value = os.getenv('RELOAD', 'false')
+
+        return raw_value.lower() == 'true'
