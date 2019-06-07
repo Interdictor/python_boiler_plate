@@ -11,3 +11,4 @@ def hello_world():
     return render_template('hello.html')
 
 app.config['PROPAGATE_EXCEPTIONS'] = False
+app.config['TEMPLATES_AUTO_RELOAD'] = True

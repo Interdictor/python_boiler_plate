@@ -7,4 +7,4 @@ with description('api') as self:
     with it('is up and running'):
         response = requests.get(url='http://localhost:8000/')
 
-        expect(response.text).to(equal('Hello, World!'))
+        expect(response.text).to(contain('Holita'))
