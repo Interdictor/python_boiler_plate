@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  'holita'
+{% endblock %}
+
+{% block content  %}
+  <div id="app">
+    <vuejs-datepicker></vuejs-datepicker>
+  </div>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/vuejs-datepicker"></script>
+  <script>
+  const app = new Vue({
+    el: '#app',
+    components: {
+    	vuejsDatepicker
+    }
+  })
+  </script>
+{% endblock %}
